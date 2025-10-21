@@ -101,7 +101,7 @@ function getIconForGroup(groupName) {
 
 const customRules = [
 	"DOMAIN-SUFFIX,linux.do,Linux Do",
-	"DOMAIN-SUFFIX,alpha.abrdns.com,DIRECT",
+	"DOMAIN,hk.alpha.abrdns.com,DIRECT",
     "IP-CIDR,183.230.113.152/32,REJECT",
 	"IP-CIDR,1.12.12.12/32,代理模式"
 ];
