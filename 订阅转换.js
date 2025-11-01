@@ -629,8 +629,8 @@ function overwriteDns(params, proxyName) {
   });
 
   params.rules = params.rules || [];
-  params.rules.unshift("DOMAIN,hk.alpha.abrdns.com,DIRECT");
   params.rules.unshift("DOMAIN-KEYWORD,dns,代理模式");
+  params.rules.unshift("DOMAIN,hk.alpha.abrdns.com,DIRECT");
 }	
 
 function getProxiesByRegex(params, regex) {
