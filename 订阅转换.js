@@ -101,7 +101,7 @@ function getIconForGroup(groupName) {
 
 const customRules = [
     "DOMAIN-SUFFIX,linux.do,Linux Do",
-    "DOMAIN,hk.alpha.abrdns.com,DIRECT",
+    "DOMAIN-SUFFIX,alpha.abrdns.com,DIRECT",
     "IP-CIDR,183.230.113.152/32,REJECT",
     "IP-CIDR,1.12.12.12/32,代理模式"
 ];
@@ -630,7 +630,7 @@ function overwriteDns(params, proxyName) {
 
   params.rules = params.rules || [];
   params.rules.unshift("DOMAIN-KEYWORD,dns,代理模式");
-  params.rules.unshift("DOMAIN,hk.alpha.abrdns.com,DIRECT");
+  params.rules.unshift("DOMAIN-SUFFIX,alpha.abrdns.com,DIRECT");
 }	
 
 function getProxiesByRegex(params, regex) {
